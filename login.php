@@ -1,8 +1,8 @@
 <?php 
 include 'koneksi.php';
  
-$username = $_POST['username'];
-$password = md5($_POST['password']);
+$username = $_POST['uname'];
+$password = md5($_POST['psw']);
  
 $login = mysql_query("select * from user where username='$username' and password='$password'");
 $cek = mysql_num_rows($login);
